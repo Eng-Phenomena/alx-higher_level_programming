@@ -9,7 +9,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *start = list, *end = list;
 
-	while (end)
+	while (end && end->next)
 	{
 		end = end->next;
 		if (end == start)
