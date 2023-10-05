@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     """printing arthimitic operations on 10 and 5"""
-    from calculator_1 import add, sub, mul, div
+    from calculator_1 import add,sub,mul,div
 
     a = 10
     b = 5
