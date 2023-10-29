@@ -1,0 +1,30 @@
+# Testing matrix multiplication with valid inputs
+>>> from 101-lazy_matrix_mul import lazy_matrix_mul
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+array([[ 7, 10],
+       [15, 22]])
+
+>>> lazy_matrix_mul([[1, 2, 3], [4, 5, 6]], [[7, 8], [9, 10], [11, 12]])
+array([[ 58,  64],
+       [139, 154]])
+
+# Testing matrix multiplication with invalid inputs
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[5, 6, 7], [8, 9, 10]])
+Traceback (most recent call last):
+    ...
+ValueError: Matrices cannot be multiplied
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [1, 2])
+Traceback (most recent call last):
+    ...
+ValueError: Matrices cannot be multiplied
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2, 3], [4, 5, 6]])
+Traceback (most recent call last):
+    ...
+ValueError: Matrices cannot be multiplied
+
+>>> lazy_matrix_mul([[1, 2, 3], [4, 5, 6]], [[7, 8], [9, 10]])
+Traceback (most recent call last):
+    ...
+ValueError: Matrices cannot be multiplied
