@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """implementation of constructor and setters and getters"""
 
-i
+
 class Rectangle:
     """class of a rectangle"""
 
