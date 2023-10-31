@@ -8,12 +8,12 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-     @classmethod
+    @classmethod
     def square(cls, size=0):
         """new rectangel instance that is a square"""
         return cls(size, size)
 
-     @staticmethod
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """returns the biggest rectangle"""
         if (type(rect_1) != Rectangle):

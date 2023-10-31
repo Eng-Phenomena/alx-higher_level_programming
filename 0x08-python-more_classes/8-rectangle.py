@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """implementation of constructor and setters and getters"""
 
-i
+
 class Rectangle:
     """class of a rectangle"""
 
     number_of_instances = 0
     print_symbol = "#"
 
-     @staticmethod
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """returns the biggest rectangle"""
         if (type(rect_1) != Rectangle):
