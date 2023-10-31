@@ -8,6 +8,11 @@ class Rectangle:
     count = 0
     symbol = "#"
 
+     @classmethod
+    def square(cls, size=0):
+        """new rectangel instance that is a square"""
+        return cls(size, size)
+
      @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """returns the biggest rectangle"""
@@ -19,11 +24,6 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-
-    @classmethod
-    def square(cls, size=0):
-        """new rectangel instance that is a square"""
-        return cls(size, size)
 
     def __init__(self, width=0, height=0):
         """constructor of the recatngle"""
