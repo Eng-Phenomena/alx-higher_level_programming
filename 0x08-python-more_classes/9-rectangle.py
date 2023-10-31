@@ -5,8 +5,8 @@ i
 class Rectangle:
     """class of a rectangle"""
 
-    count = 0
-    symbol = "#"
+    number_of_instances = 0
+    print_symbol = "#"
 
      @classmethod
     def square(cls, size=0):
@@ -29,12 +29,12 @@ class Rectangle:
         """constructor of the recatngle"""
         self.height = height
         self.width = width
-        Rectangle.count += 1
+        Rectangle.number_of_instances += 1
 
     def __del__(self):
         """prints a string at deletion"""
         print("Bye rectangle...")
-        Rectangle.count -= 1
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
@@ -78,7 +78,7 @@ class Rectangle:
         """string representation of rectangle"""
         rect_str = ""
         if self.__width != 0 and self.__height != 0:
-            rect_str += "\n".join(str(self.symbol) * self.__width for j in range(self.__height))
+            rect_str += "\n".join(str(self.print_symbol) * self.__width for j in range(self.__height))
         return rect_str
 
     def __repr__(self):
